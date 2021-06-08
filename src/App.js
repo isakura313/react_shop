@@ -9,9 +9,6 @@ function App() {
   return (
     <div className="App">
       <Navigator/>
-      <header className="App-header">
-
-      </header>
     </div>
   );
 }
