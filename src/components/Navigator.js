@@ -1,4 +1,7 @@
 import React from "react";
+import { useSelector } from 'react-redux';
+import {selectCount} from '../features/counter/counterSlice';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +22,7 @@ import Cart from '../pages/Cart';
 
 
 export default function BasicExample() {
+  const count = useSelector(selectCount);
   return (
     <Router>
       <AppBar position="static">
@@ -53,14 +57,9 @@ export default function BasicExample() {
 
           <hr />
 
-          {/*
-            A <Switch> looks through all its children <Route>
-            elements and renders the first one whose path
-            matches the current URL. Use a <Switch> any time
-            you have multiple routes, but you want only one
-            of them to render at a time
-          */}
+  
         </Toolbar>
+        <h5> Количество товаров  {count}</h5>
       </AppBar>
       <Switch>
         <Route exact path="/">

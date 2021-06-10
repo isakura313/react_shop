@@ -2,18 +2,26 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Grid from '@material-ui/core/Grid';
 import { Provider } from 'react-redux';
+import {cartList} from '../features/counter/counterSlice';
 
 
 
 
 function Сart(props) {
+    const cartData = useSelector(cartList);
+    console.log(cartData)
     const productNow = props.countOfProducts
-    console.log(productNow)
+    
+    const ProductList = cartData.map(product=>
+       
+          <div key={product.id}> 
+          {product.title} {product.price}  </div>
+        )
     let CartList =  () => { 
         if (productNow == 0 ) {
         return "Корзина пуста! Идите и купите чего - нибудь!"
       } 
-        return "Ваши товары"
+        return  {ProductList}
       } 
     return (
         <div>
@@ -26,7 +34,7 @@ function Сart(props) {
                     </h1>;
                 </Grid>
                 <Grid item xs={8}>
-                    <h3> Список товаров </h3>
+                {ProductList}
                 </Grid>
             </Grid>
         </div>

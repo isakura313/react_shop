@@ -1,0 +1,28 @@
+{
+    "products":[
+        {
+            "id":217654079,
+            "img": "https://cdn1.ozone.ru/s3/multimedia-t/wc1200/6032049353.jpg",
+            "title": "Кроссовки Tommy Hilfiger",
+            "price": 10990
+        },
+        {
+            "id":272349105,
+            "img": "https://cdn1.ozone.ru/s3/multimedia-i/wc1200/6064281258.jpg",
+            "title": "Кроссовки adidas Ultimashow",
+            "price": 1768
+        },
+        {
+            "id":178567154,
+            "img": "https://cdn1.ozone.ru/s3/multimedia-g/wc1200/6017313352.jpg",
+            "title": "Кроссовки adidas Duramo Sl",
+            "price": 2317
+        },
+        {
+            "id":215188908,
+            "img": "https://cdn1.ozone.ru/s3/multimedia-r/wc1200/6032371011.jpg",
+            "title": "Кроссовки ASICS",
+            "price": 6283
+        }
+    ]
+}
